@@ -3,7 +3,6 @@
 > **18 minimal, dependency-light implementations of the tools every modern coding agent ships.** ~10 KB each, ESM, zero magic. Read them, fork them, ship them.
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Built by Moclaw](https://img.shields.io/badge/Built%20by-Moclaw-black.svg)](https://moclaw.ai)
 
 ---
 
@@ -11,7 +10,7 @@
 
 Every team building a coding agent ends up reimplementing the same 18 tools: `Read`, `Write`, `Edit`, `Glob`, `Grep`, `Bash`, `Task`, `TodoWrite`, plan mode, `AskUserQuestion`, `WebFetch`, `WebSearch`, etc. The shapes converge — they're constrained by what an LLM can call reliably, not by what's clever.
 
-[Moclaw](https://moclaw.ai) builds AI agents for developers. After implementing these tools more than once, we distilled the patterns into 18 small ESM modules you can read in one sitting. **They are starting points, not products.**
+After implementing these tools more than once, we distilled the patterns into 18 small ESM modules you can read in one sitting. **They are starting points, not products.**
 
 ## Tool list
 
@@ -72,7 +71,7 @@ bun src/bash.js "npm install" --background
 
 ## Insights — the bits worth stealing
 
-A handful of non-obvious decisions show up across production coding agents. Each section below is the short version; full deep-dives live on the [Moclaw engineering blog](https://moclaw.ai/blog).
+A handful of non-obvious decisions show up across production coding agents. Each section below is the short version.
 
 ### 1. Bash should be sandboxed by default on macOS
 
@@ -127,12 +126,10 @@ It demonstrates the canonical pattern: model-calls-tool → run tool → feed re
 - **Not a clone.** Tool shapes loosely follow conventions used by major coding agents because the LLM-callable interface space is small. Implementations are independent.
 - **Not production-grade.** Treat these as readable references; add logging, permissioning, and error handling before deploying.
 
-## Built by Moclaw
-
-[Moclaw](https://moclaw.ai) is building AI agents for developers. We share what we learn on the [Moclaw blog](https://moclaw.ai/blog).
-
-If you build something with these tools, [let us know](https://moclaw.ai) — we'd love to see it.
-
 ## License
 
 [MIT](LICENSE)
+
+---
+
+Contributed by the Moclaw team — [https://moclaw.ai](https://moclaw.ai)

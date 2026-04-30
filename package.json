@@ -46,18 +46,8 @@
     "openai",
     "tool-use",
     "function-calling",
-    "mcp",
-    "moclaw"
+    "mcp"
   ],
-  "author": "Moclaw <hello@moclaw.ai> (https://moclaw.ai)",
-  "homepage": "https://moclaw.ai",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/moclaw/minimal-agent-tools.git"
-  },
-  "bugs": {
-    "url": "https://github.com/moclaw/minimal-agent-tools/issues"
-  },
   "license": "MIT",
   "engines": {
     "node": ">=20.0.0"
