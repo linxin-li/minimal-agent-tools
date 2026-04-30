@@ -1,0 +1,68 @@
+{
+  "name": "minimal-agent-tools",
+  "version": "0.1.0",
+  "description": "18 minimal AI agent tool implementations (Read, Write, Edit, Glob, Grep, Bash, Task, TodoWrite, plan mode, WebFetch, WebSearch, ...) — clean ESM, MIT, fork-friendly.",
+  "type": "module",
+  "main": "./src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./read": "./src/read.js",
+    "./write": "./src/write.js",
+    "./edit": "./src/edit.js",
+    "./glob": "./src/glob.js",
+    "./grep": "./src/grep.js",
+    "./bash": "./src/bash.js",
+    "./kill-shell": "./src/kill-shell.js",
+    "./notebook-edit": "./src/notebook-edit.js",
+    "./task": "./src/task.js",
+    "./task-output": "./src/task-output.js",
+    "./todo-write": "./src/todo-write.js",
+    "./enter-plan-mode": "./src/enter-plan-mode.js",
+    "./exit-plan-mode": "./src/exit-plan-mode.js",
+    "./ask-user-question": "./src/ask-user-question.js",
+    "./skill": "./src/skill.js",
+    "./web-fetch": "./src/web-fetch.js",
+    "./web-search": "./src/web-search.js",
+    "./compact": "./src/compact.js"
+  },
+  "files": [
+    "src",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "format": "bunx prettier --write ."
+  },
+  "keywords": [
+    "ai-agent",
+    "agent",
+    "agents",
+    "llm",
+    "llm-tools",
+    "agent-tools",
+    "coding-agent",
+    "claude",
+    "anthropic",
+    "openai",
+    "tool-use",
+    "function-calling",
+    "mcp",
+    "moclaw"
+  ],
+  "author": "Moclaw <hello@moclaw.ai> (https://moclaw.ai)",
+  "homepage": "https://moclaw.ai",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moclaw/minimal-agent-tools.git"
+  },
+  "bugs": {
+    "url": "https://github.com/moclaw/minimal-agent-tools/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.0"
+  }
+}
